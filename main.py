@@ -2,9 +2,12 @@
 
 
 def ispalindrome(p):
-
-    # votre code ici
-    
+    n = len(p)
+    for i in range(n // 2):
+        if p[i] != p[n - 1 - i]:
+            break
+    else:
+        return True
     return False
 
 #### Fonction principale
